@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppBuilder - Landing Page</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/images/logo.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <div id="navbar">
+        <div class="logo">
+            <img src="/assets/images/logo.svg" alt="">
+        </div>
+        <div class="navlinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <section id="home">
+        <div class="homebox">
+            <div class="homeinfo">
+                <h2>Welcome to AppBuilder</h2>
+                <p>We are developers and we build apps!</p>
+            </div>
+            <div class="homeimage">
+                <img src="/assets/images/p1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            Welcome to AppBuilder, where innovation meets expertise in the dynamic world of app development. At the
+            heart of our organization are passionate developers who breathe life into ideas, transforming concepts into
+            seamless, cutting-edge applications.
+
+            Our team is a diverse assembly of tech enthusiasts, united by a <b>common mission</b>: to craft exceptional
+            apps that redefine user experiences. With a collective wealth of experience and a relentless pursuit of
+            excellence, we navigate the ever-evolving landscape of technology to bring you solutions that are not just
+            functional but delightful.
+
+            What sets us apart is our commitment to staying at the forefront of industry trends. We thrive on the
+            challenges presented by emerging technologies, constantly pushing boundaries to ensure our apps not only
+            meet but exceed the expectations of our users.
+
+            Transparency and collaboration are the <b>cornerstones</b> of our development process. We believe in open
+            communication and foster an environment where ideas flow freely, leading to the creation of truly innovative
+            and robust applications. Your vision is our guide, and we work hand in hand with you to turn it into
+            reality.
+            <br>
+            Whether you are a startup with a groundbreaking concept or an established enterprise seeking to elevate your
+            digital presence, our team is geared up to meet your unique needs. From conceptualization to deployment, we
+            offer a comprehensive suite of services designed to streamline the app development journey.
+            <br>
+            At AppBuilder, we understand that the success of our clients is intertwined with ours. That's why we go
+            beyond merely delivering a product; we build lasting partnerships. Our commitment doesn't end with the
+            launch; we provide ongoing support and updates to ensure your app remains at the forefront of functionality
+            and innovation.
+            <br>
+            Join us on this exciting journey of transforming ideas into extraordinary applications. Let's shape the
+            future of technology together. Welcome to a world where innovation knows no bounds. Welcome to AppBuilder.
+        </p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>
+            Discover a world of tailored solutions designed to propel your digital presence to new heights. At
+            AppBuilder, our suite of services caters to every facet of app development, ensuring a seamless and
+            impactful experience for our clients.
+            <br>
+            <b>1. Custom App Development:</b> From ideation to deployment, our expert developers specialize in crafting
+            bespoke applications tailored to your unique vision and business requirements.
+            <br>
+            <b>2. User Experience (UX) Design:</b> Elevate your app's appeal with our UX design services. We focus on
+            creating intuitive, engaging interfaces that captivate users and keep them coming back for more.
+            <br>
+            <b>3. Mobile App Development:</b> Harness the power of mobile technology with our cutting-edge mobile app
+            development services. Whether iOS or Android, we bring your app to life on the platforms that matter most.
+            <br>
+            <b>4. Web App Development:</b> Transform your web presence with our web app development expertise. Our team
+            creates responsive and scalable web applications that cater to the diverse needs of your audience.
+            <br>
+            <b>5. Maintenance and Support:</b> Our commitment extends beyond the launch. We provide ongoing maintenance
+            and support to ensure your app remains optimized, secure, and up-to-date with the latest industry standards.
+            <br>
+            <b>6. Consulting Services:</b> Leverage our industry insights and expertise through our consulting services.
+            Whether you're navigating market trends or optimizing your existing app, our consultants are here to guide
+            you.
+            <br>
+            Partner with AppBuilder for a comprehensive array of services, each designed to bring your digital
+            aspirations to fruition. Welcome to a world where innovation meets execution. Welcome to AppBuilder.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        
+        <p>Have questions or inquiries? Reach out to us via email at <a href="mailto:#">info@appbuilder.com</a>.</p>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var navbar = document.getElementById("navbar");
+
+            window.onscroll = function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    navbar.style.backgroundColor = "#141e2778";
+                } else {
+                    navbar.style.backgroundColor = "#141e27";
+                }
+            };
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Your existing script for the navigation bar
+
+            var contactForm = document.getElementById("contactForm");
+
+            contactForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                // You can add code here to handle the form submission,
+                // such as sending data to a server using AJAX.
+
+                alert("Form submitted! (This is a placeholder, implement actual form submission logic.)");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
